@@ -1,0 +1,101 @@
+/* .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+     /* account for the height of the clock hands */
+  /* } */
+/* .hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%; 
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}  
+.clock {
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+} */
+
+body{
+  background-color: coral;
+  display: flex;
+}
+
+.clock{
+  width:500px;
+  height:500px;
+  background-color:rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  border: 5px solid brown;
+  position: relative;
+  margin: auto;
+  top: 100px;
+}
+
+.number{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  
+}
+
+.num1{transform: rotate(30deg);}
+.num2{transform: rotate(60deg);}
+.num3{transform: rotate(90deg);}
+.num4{transform: rotate(120deg);}
+.num5{transform: rotate(150deg);}
+.num6{transform: rotate(180deg);}
+.num7{transform: rotate(210deg);}
+.num8{transform: rotate(240deg);}
+.num9{transform: rotate(270deg);}
+.num10{transform: rotate(300deg);}
+.num11{transform: rotate(330deg);}
+.num12{transform: rotate(360deg);}
+
+.hand{
+  position: absolute;
+  width: 10px;
+  height: 220px;
+  background: black;
+  left:50%;
+  bottom:50%;
+  transform:translateX(-50%);
+  /* transform-origin:50% ; */
+  transform-origin:bottom ;
+  /* transform: rotate(90deg); */
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transition: all 0.05s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+
+}
+
+.second{
+  /* position: absolute; */
+  width: 5px;
+  height: 50%;
+  background-color: crimson;
+}
+.minute{
+  /* position: absolute; */
+  width: 9px;
+  height: 45%;
+  background-color:black;
+}
+.hour{
+  /* position: absolute; */
+  width: 12px;
+  height: 40%;
+  background-color: black;
+}
